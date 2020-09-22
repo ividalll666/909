@@ -157,17 +157,17 @@ body
             display: flex
             width: 100%
             flex-wrap: wrap
-            margin-bottom: 10%
             justify-content: center
             margin-bottom: 5%
             background: black
-            padding: 5% 0 5% 0
             
             #trabalhos-titulo
                 width: 100%
                 text-align: center
                 display: flex
                 justify-content: center
+                margin-top: 5%
+                margin-bottom: 5%
 
                 h1
                     padding: 5%
@@ -177,16 +177,16 @@ body
                     box-shadow: 10px 10px 0px $color-one
                     font-family: 'Oswald', sans-serif
 
-
             #container-carousel
                 width: 70% 
-                margin-top: 5%
-
+                margin-bottom: 5%
+                
                 #trabalhos-carousel
                     .carousel-inner
                         .carousel-item
                             width: 100%
                             height: 70vh
+                            overflow: hidden
 
                             img
                                 object-fit: contain
@@ -369,7 +369,14 @@ body
             #propaganda-parceria
                 margin-top: 10%
 
-@media ( max-width: 600px )
+@media (max-width: 800px )
+    #container-trabalhos
+        #container-carousel
+            margin-bottom: -3% !important
+            margin-top: -3% !important
+
+    
+@media ( max-width: 540px )
     
     html:root
         font-size: 1vw
@@ -379,13 +386,17 @@ body
 
     #container-conteudo
         #container-home
-            margin-top: 5vh !important
+            margin-top: 0vh !important
 
         #container-info
             height: 30vh !important
     
         #container-trabalhos
+            #trabalhos-titulo
             #container-carousel
+                margin-bottom: -10% !important
+                margin-top: -10% !important
+
                 #trabalhos-carousel
                     .carousel-control-prev
                         .fas

@@ -193,13 +193,11 @@ body #container-conteudo #container-trabalhos {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 10%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 5%;
   background: black;
-  padding: 5% 0 5% 0;
 }
 
 body #container-conteudo #container-trabalhos #trabalhos-titulo {
@@ -211,6 +209,8 @@ body #container-conteudo #container-trabalhos #trabalhos-titulo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 body #container-conteudo #container-trabalhos #trabalhos-titulo h1 {
@@ -225,12 +225,13 @@ body #container-conteudo #container-trabalhos #trabalhos-titulo h1 {
 
 body #container-conteudo #container-trabalhos #container-carousel {
   width: 70%;
-  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item {
   width: 100%;
   height: 70vh;
+  overflow: hidden;
 }
 
 body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item img {
@@ -467,7 +468,14 @@ body #container-conteudo footer #propaganda-parceria {
   margin-top: 10%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  #container-trabalhos #container-carousel {
+    margin-bottom: -3% !important;
+    margin-top: -3% !important;
+  }
+}
+
+@media (max-width: 540px) {
   html:root {
     font-size: 1vw;
   }
@@ -475,10 +483,14 @@ body #container-conteudo footer #propaganda-parceria {
     font-size: 2.3rem;
   }
   #container-conteudo #container-home {
-    margin-top: 5vh !important;
+    margin-top: 0vh !important;
   }
   #container-conteudo #container-info {
     height: 30vh !important;
+  }
+  #container-conteudo #container-trabalhos #container-carousel {
+    margin-bottom: -10% !important;
+    margin-top: -10% !important;
   }
   #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-control-prev .fas {
     color: black !important;
