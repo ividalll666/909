@@ -175,6 +175,8 @@ body
                     background: white
                     border: 2px solid black
                     box-shadow: 10px 10px 0px $color-one
+                    font-family: 'Oswald', sans-serif
+
 
             #container-carousel
                 width: 70% 
@@ -188,13 +190,10 @@ body
 
                             img
                                 object-fit: contain
-                                position: relative
-
-                            img:before
+                                border-radius: 15px !important
 
 
                             .carousel-caption
-                                
                                 h5 
                                     color: black
                                     background: white
@@ -202,6 +201,8 @@ body
                                     width: 100%
                                     box-shadow: 10px 10px 0px $color-one
                                     align-self: center
+                                    font-family: 'Oswald', sans-serif
+
 
         #modelos-container
             #modelos-titulo
@@ -216,6 +217,8 @@ body
                     background: white
                     border: 2px solid black
                     box-shadow: 10px 10px 0px $color-one
+                    font-family: 'Oswald', sans-serif
+
 
             #modelos
                 display: flex
@@ -252,6 +255,8 @@ body
             background: black
             width: 100%
             padding: 10%
+            font-family: 'Oswald', sans-serif
+
 
             #planos-titulo
                 margin-bottom: 5%
@@ -266,7 +271,7 @@ body
                     background: white
                     border: 2px solid black
                     box-shadow: 10px 10px 0px $color-one
-
+                    font-family: 'Oswald', sans-serif
 
             .container-plano + .container-plano
                 margin-left: 5%
@@ -326,6 +331,8 @@ body
             flex-wrap: wrap
             justify-content: center
             margin-bottom: 5% 
+            font-family: 'Oswald', sans-serif
+
 
             #titulo-parceiros
                 width: 100%
@@ -339,6 +346,9 @@ body
                     border: 2px solid black
                     box-shadow: 10px 10px 0px $color-one
                     text-align: center
+                    font-family: 'Oswald', sans-serif
+                
+
 
             #parceiros-container + #parceiros-container
                 margin-left: 5%
@@ -353,3 +363,44 @@ body
                     text-align: center
                     padding: 3%
 
+                    p
+                        margin: 10% 0 10% 0
+            
+            #propaganda-parceria
+                margin-top: 10%
+
+@media ( max-width: 600px )
+    
+    html:root
+        font-size: 1vw
+
+    #container-navbar
+        font-size: 2.3rem
+
+    #container-conteudo
+        #container-home
+            margin-top: 5vh !important
+
+        #container-info
+            height: 30vh !important
+    
+        #container-trabalhos
+            #container-carousel
+                #trabalhos-carousel
+                    .carousel-control-prev
+                        .fas
+                            color: black !important
+
+                    .carousel-control-next
+                       .fas
+                           color: black !important
+
+        #planos
+            font-size: 2rem
+
+            .btn
+                font-size: 1.8rem
+                font-family: 'Oswald', sans-serif
+
+        footer
+            font-size: 2rem

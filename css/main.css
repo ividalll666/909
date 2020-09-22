@@ -220,6 +220,7 @@ body #container-conteudo #container-trabalhos #trabalhos-titulo h1 {
   border: 2px solid black;
   -webkit-box-shadow: 10px 10px 0px #fc0909;
           box-shadow: 10px 10px 0px #fc0909;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo #container-trabalhos #container-carousel {
@@ -235,7 +236,7 @@ body #container-conteudo #container-trabalhos #container-carousel #trabalhos-car
 body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item img {
   -o-object-fit: contain;
      object-fit: contain;
-  position: relative;
+  border-radius: 15px !important;
 }
 
 body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item .carousel-caption h5 {
@@ -248,6 +249,7 @@ body #container-conteudo #container-trabalhos #container-carousel #trabalhos-car
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo #modelos-container #modelos-titulo {
@@ -268,6 +270,7 @@ body #container-conteudo #modelos-container #modelos-titulo h1 {
   border: 2px solid black;
   -webkit-box-shadow: 10px 10px 0px #fc0909;
           box-shadow: 10px 10px 0px #fc0909;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo #modelos-container #modelos {
@@ -320,6 +323,7 @@ body #container-conteudo #planos {
   background: black;
   width: 100%;
   padding: 10%;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo #planos #planos-titulo {
@@ -341,6 +345,7 @@ body #container-conteudo #planos #planos-titulo h1 {
   border: 2px solid black;
   -webkit-box-shadow: 10px 10px 0px #fc0909;
           box-shadow: 10px 10px 0px #fc0909;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo #planos .container-plano + .container-plano {
@@ -415,6 +420,7 @@ body #container-conteudo footer {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 5%;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo footer #titulo-parceiros {
@@ -435,6 +441,7 @@ body #container-conteudo footer #titulo-parceiros h1 {
   -webkit-box-shadow: 10px 10px 0px #fc0909;
           box-shadow: 10px 10px 0px #fc0909;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 body #container-conteudo footer #parceiros-container + #parceiros-container {
@@ -450,5 +457,44 @@ body #container-conteudo footer #parceiros-container {
 body #container-conteudo footer #parceiros-container .parceiro {
   text-align: center;
   padding: 3%;
+}
+
+body #container-conteudo footer #parceiros-container .parceiro p {
+  margin: 10% 0 10% 0;
+}
+
+body #container-conteudo footer #propaganda-parceria {
+  margin-top: 10%;
+}
+
+@media (max-width: 600px) {
+  html:root {
+    font-size: 1vw;
+  }
+  #container-navbar {
+    font-size: 2.3rem;
+  }
+  #container-conteudo #container-home {
+    margin-top: 5vh !important;
+  }
+  #container-conteudo #container-info {
+    height: 30vh !important;
+  }
+  #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-control-prev .fas {
+    color: black !important;
+  }
+  #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-control-next .fas {
+    color: black !important;
+  }
+  #container-conteudo #planos {
+    font-size: 2rem;
+  }
+  #container-conteudo #planos .btn {
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+  }
+  #container-conteudo footer {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
