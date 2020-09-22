@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html:root {
+  font-size: 1vw;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body #container-conteudo #container-home .legenda, body #container-conteudo #container-info #sobrenos .balloon-sobrenos, body #container-conteudo #container-info #contato .balloon-contato {
+  position: absolute;
+  top: 50%;
+  color: black;
+  padding: 3%;
+  font-size: 2rem;
+  text-align: center;
+  background: white;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  border: 1px solid black;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+body #container-navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  top: 0;
+  z-index: 100;
+  border: 0px solid black;
+}
+
+body #container-navbar #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 1.5%;
+  background: black;
+  color: white;
+}
+
+body #container-navbar #navbar .navbar-item {
+  margin: 0% 3% 0% 3%;
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 1%;
+}
+
+body #container-navbar #navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+body #container-navbar #navbar .navbar-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: white;
+  background: #fc0909;
+  cursor: pointer;
+}
+
+body #container-conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+body #container-conteudo #container-home {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  margin-top: 9vh;
+}
+
+body #container-conteudo #container-home img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body #container-conteudo #container-home .legenda {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #container-home .legenda h1 {
+  font-size: 3.6rem;
+}
+
+body #container-conteudo #container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  background: white;
+}
+
+body #container-conteudo #container-info h1 {
+  margin-bottom: 5%;
+  font-family: 'Oswald', sans-serif;
+}
+
+body #container-conteudo #container-info p {
+  text-align: justify;
+  font-family: 'Oswald', sans-serif;
+}
+
+body #container-conteudo #container-info #sobrenos {
+  width: 50%;
+  position: relative;
+}
+
+body #container-conteudo #container-info #sobrenos .balloon-sobrenos {
+  width: 70%;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #container-info #contato {
+  width: 50%;
+  position: relative;
+}
+
+body #container-conteudo #container-info #contato .balloon-contato {
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #container-info #contato .balloon-contato .icons {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 5%;
+}
+
+body #container-conteudo #container-info #contato .balloon-contato i {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body #container-conteudo #container-info #contato .balloon-contato i + i {
+  margin-left: 3%;
+}
+
+body #container-conteudo #container-info #contato .balloon-contato .icons i:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  cursor: pointer;
+}
+
+body #container-conteudo #container-trabalhos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+  background: black;
+  padding: 5% 0 5% 0;
+}
+
+body #container-conteudo #container-trabalhos #trabalhos-titulo {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #container-conteudo #container-trabalhos #trabalhos-titulo h1 {
+  padding: 5%;
+  width: 40%;
+  background: white;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #container-trabalhos #container-carousel {
+  width: 70%;
+  margin-top: 5%;
+}
+
+body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 70vh;
+}
+
+body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+body #container-conteudo #container-trabalhos #container-carousel #trabalhos-carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  color: black;
+  background: white;
+  padding: 3%;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body #container-conteudo #modelos-container #modelos-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+body #container-conteudo #modelos-container #modelos-titulo h1 {
+  text-align: center;
+  padding: 5%;
+  width: 40%;
+  background: white;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #modelos-container #modelos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #container-conteudo #modelos-container #modelos .container-modelos-foto {
+  width: 25%;
+  padding: 5%;
+}
+
+body #container-conteudo #modelos-container #modelos .container-modelos-foto img {
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #modelos-container #modelos .container-modelos-foto span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10%;
+  color: white;
+  font-size: 3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body #container-conteudo #modelos-container #modelos .container-modelos-foto span:hover {
+  cursor: pointer;
+  color: #fc0909;
+}
+
+body #container-conteudo #planos {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+  background: black;
+  width: 100%;
+  padding: 10%;
+}
+
+body #container-conteudo #planos #planos-titulo {
+  margin-bottom: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #container-conteudo #planos #planos-titulo h1 {
+  text-align: center;
+  padding: 5%;
+  width: 60%;
+  background: white;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+}
+
+body #container-conteudo #planos .container-plano + .container-plano {
+  margin-left: 5%;
+}
+
+body #container-conteudo #planos .container-plano {
+  width: 30%;
+  text-align: center;
+  border: 1px solid black;
+  background: white;
+}
+
+body #container-conteudo #planos .container-plano .titulo {
+  background: #fc0909;
+  padding: 10%;
+  color: white;
+}
+
+body #container-conteudo #planos .container-plano .container-coisas p {
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
+
+body #container-conteudo #planos .container-plano .preco {
+  background: #fc0909;
+  padding: 10%;
+  color: white;
+}
+
+body #container-conteudo #planos .container-plano .btn {
+  padding: 5%;
+  background: black;
+  color: white;
+  width: 90%;
+  margin: 10% 0 10% 0%;
+  position: relative;
+  z-index: 2;
+}
+
+body #container-conteudo #planos .container-plano .btn:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background: #fc0909;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: -1;
+}
+
+body #container-conteudo #planos .container-plano .btn:hover:before {
+  height: 100%;
+}
+
+body #container-conteudo #planos .container-plano .btn:hover {
+  z-index: 2;
+  background: none;
+}
+
+body #container-conteudo footer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+body #container-conteudo footer #titulo-parceiros {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #container-conteudo footer #titulo-parceiros h1 {
+  padding: 5%;
+  width: 40%;
+  background: white;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 0px #fc0909;
+          box-shadow: 10px 10px 0px #fc0909;
+  text-align: center;
+}
+
+body #container-conteudo footer #parceiros-container + #parceiros-container {
+  margin-left: 5%;
+}
+
+body #container-conteudo footer #parceiros-container {
+  width: 15%;
+  margin-top: 5%;
+  border: 1px solid black;
+}
+
+body #container-conteudo footer #parceiros-container .parceiro {
+  text-align: center;
+  padding: 3%;
+}
+/*# sourceMappingURL=main.css.map */
